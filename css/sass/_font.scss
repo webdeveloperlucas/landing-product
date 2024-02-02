@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;800&display=swap');
+@mixin typeface-1($size, $device:desktop) {
+    font-family: Poppins;
+
+    // H1
+
+    @if $size h1 and $device == desktop {
+        font-size: 64px;
+        line-height: 100%;
+    } @else if $size == h1 and $device == mobile {
+        font-size: 36px;
+        line-height: 120%;
+    }
+
+    // H2
+
+    @if $size == h2 and $device == desktop {
+        font-size: 64px;
+        line-height: 100%;
+    } @else if $size == h2 and $device == mobile {
+        font-size: 36px;
+        line-height: 120%;
+    }
+
+    // H3 
+
+    @else if $size == h3 and $device == desktop {
+        font-size: 36px;
+        line-height: 120%;
+    } @else if $size == h3 and $device == mobile {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    // H4 
+    @else if $size ==  h4 and $device == desktop {
+        font-size: 18px;
+        line-height: 140%;
+    }@else if $size == h3 and $device == mobile {
+        font-size: 16px;
+        line-height:150%;
+    }
+
+}
+
+
+
+@mixin typeface-2($size: p2, $device: desktop){
+    font-family: Poppins;
+    
+    @if $size == p1 and $device == desktop {
+        font-size: 24px;
+        line-height: 130%;
+    } @else if $size == p1 and $device == mobile {
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    @if $size == p1 and $device == desktop {
+        font-size: 16px;
+        line-height: 140%;
+    } @else if $size == p1 and $device == mobile {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    @if $size == p3 and $device == desktop {
+        font-size: 14px;
+        line-height: 150%;
+    } @else if $size == p3 and $device == mobile {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+}
+
+.text-white {
+    color: white;
+}
+
+span {
+    color: #FFAB51;
+}

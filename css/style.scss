@@ -1,0 +1,28 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import "sass/layout";
+@import "sass/spacing";
+@import "sass/font";
+@import "sass/modify";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter' , sans-serif;
+    scroll-behavior: smooth;
+    background: #030303;
+}
+
+svg, img {
+    display: block;
+    width: 100%;
+}
